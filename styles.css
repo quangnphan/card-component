@@ -1,0 +1,93 @@
+.attribution { font-size: 11px; text-align: center; }
+.attribution a { color: hsl(228, 45%, 44%); }
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: "Kumbh Sans", sans-serif;
+}
+.main{
+    background-color: hsl(185, 75%, 39%);
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    overflow: hidden;
+}
+.card{
+    background-color: #fff;
+    border-radius: 6%;
+    overflow: hidden;
+    text-align: center;
+    position: relative;
+}
+.card-body{
+    margin-bottom: 25px;
+}
+.card-body span{
+    color: hsl(227, 10%, 46%);
+}
+.card-body img{
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    border: 5px solid white;
+    margin: -50px auto 25px auto;
+}
+.card-body span{
+    margin: auto 5px;
+}
+.card-body p{
+    margin-top: 10px;
+}
+.card-footer{
+   display: flex;
+   justify-content: center;
+   border-top: 1px solid hsl(0, 0%, 90%);
+}
+.card-footer .item{
+    margin: 25px 25px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.card-footer .item p{
+    margin-top: 5px;
+}
+h2{
+    font-size: 18px;
+    color: hsl(229, 23%, 23%);
+    font-weight: 700;
+}
+p{
+    color:hsl(0, 0%, 59%);
+    font-weight: 400;
+}
+
+.circles .top,
+.circles .bottom{
+    position: absolute;
+}
+.circles .top{
+    top: -400px;
+    left: -350px;
+}
+.circles .bottom{
+    bottom: -400px;
+    right: -350px;
+}
+
+@media(max-width: 500px){
+    .circles .top{
+        top: -500px;
+        left: -800px;
+    }
+    .circles .bottom{
+        bottom: -500px;
+        right: -800px;
+    }
+}
